@@ -28,7 +28,6 @@ namespace http
     QNetworkReply* asyncRequest(const QByteArray& verb, const QNetworkRequest& req, const QByteArray& body, int ms)
     {
         static QNetworkAccessManager* nam = new QNetworkAccessManager(qApp);
-        //static QNetworkAccessManager nam(qApp);
 
         QNetworkRequest r(req);
         if (ms > 0)
